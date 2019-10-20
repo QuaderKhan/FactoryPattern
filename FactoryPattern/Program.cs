@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FactoryPattern.Factory;
+using System;
 
 namespace FactoryPattern
 {
@@ -10,6 +7,11 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
+            // Instantiate the Factory class with reference of the concrete factory class from which you need an object
+            CarFactory maruti = new MarutiCarFactory(); 
+            Car Maruti800 = maruti.CreatCarInstance(CarModel.MarutiEightHundred);
+            Console.WriteLine(Maruti800.GetType());
+            Console.ReadKey();
         }
     }
 }

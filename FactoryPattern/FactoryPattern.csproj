@@ -43,11 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\HundaiI10.cs" />
+    <Compile Include="Concrete\HundaiI20.cs" />
+    <Compile Include="Concrete\MarutiEightHundred.cs" />
+    <Compile Include="Concrete\FordFigo.cs" />
+    <Compile Include="Concrete\FordLaura.cs" />
+    <Compile Include="Concrete\MarutiSwift.cs" />
+    <Compile Include="Factory\Car.cs" />
+    <Compile Include="Factory\FordCarFactory.cs" />
+    <Compile Include="Factory\HundaiCarFactory.cs" />
+    <Compile Include="Factory\CarFactory.cs" />
+    <Compile Include="Factory\Enums.cs" />
+    <Compile Include="Factory\MarutiCarFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
